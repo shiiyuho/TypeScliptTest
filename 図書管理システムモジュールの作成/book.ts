@@ -12,12 +12,14 @@ export class Book {
   }
 
   displayInfo(): void {
+    //ディスプレイインフォ
     console.log(
-      `title: ${this.title}, author: ${this.author}, stock: ${this.stock}`
+      `title: ${this.title}, author: ${this.author}, stock: ${this.stock}` //
     );
   }
 
   borrowBook(): void {
+    //ひとつずつ減らしていく「if文」
     if (this.stock > 0) {
       this.stock--;
       console.log(`貸出しました`);

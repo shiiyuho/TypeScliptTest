@@ -9,9 +9,12 @@ export class Book {
         this.stock = stock;
     }
     displayInfo() {
-        console.log(`title: ${this.title}, author: ${this.author}, stock: ${this.stock}`);
+        //ディスプレイインフォ
+        console.log(`title: ${this.title}, author: ${this.author}, stock: ${this.stock}` //
+        );
     }
     borrowBook() {
+        //ひとつずつ減らしていく「if文」
         if (this.stock > 0) {
             this.stock--;
             console.log(`貸出しました`);
