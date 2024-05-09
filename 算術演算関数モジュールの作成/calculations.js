@@ -1,14 +1,17 @@
-export function calculation(number1, number2) {
-    const answer = [
-        number1 + number2,
-        number1 - number2,
-        number1 * number2,
-        number1 / number2, //割り算
-    ];
-    if (number2 != 0) {
-        return answer; //答えを戻す戻り値
+export function add(x, y) {
+    return x + y;
+}
+export function subtract(x, y) {
+    return x - y;
+}
+export function multiply(x, y) {
+    return x * y;
+}
+export function divide(x, y) {
+    if (y != 0) {
+        return x / y;
     }
     else {
-        console.log('error');
+        console.log("error");
     }
 }
