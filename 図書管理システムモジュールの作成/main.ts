@@ -1,9 +1,7 @@
+// main.tsにインポート
 import { Book } from "./book.js";
 
-const book = new Book();
-book.title = "Yuho Ishii";
-book.stock = 20;
-book.author = "ishii";
-console.log(book.title);
-console.log(book.stock);
-console.log(book.author);
+let book1 = new Book("1", "1", 0);
+book1.displayInfo(); //ほんの情報
+book1.borrowBook(); //借りる前
+book1.displayInfo(); //借りた後の情報

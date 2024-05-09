@@ -1,17 +1,28 @@
-export class Book {
-  title: string = "";
-  author: string = "";
-  stock: number = 0;
+// book.ts、エクスポート
 
-  public displayInfo() {
+export class Book {
+  title: string;
+  author: string;
+  stock: number;
+
+  constructor(title: string, author: string, stock: number) {
+    this.title = title;
+    this.author = author;
+    this.stock = stock;
+  }
+
+  displayInfo(): void {
     console.log(
-      `title: ${this.title}, author: ${this.author},stock:${this.stock}`
+      `title: ${this.title}, author: ${this.author}, stock: ${this.stock}`
     );
   }
-  public borrowBook() {
-    for (let i = 1; i >= 0; i--) {
-      console.log(i + "貸し出しされました");
+
+  borrowBook(): void {
+    if (this.stock > 0) {
+      this.stock--;
+      console.log(`貸出しました`);
+    } else {
+      console.log(`在庫切れ`);
     }
-    console.log("在庫なし");
   }
 }
