@@ -1,21 +1,20 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.times = exports.small = exports.big = exports.long = void 0;
-function long(font) {
-    return font.length;
+// stringUtils.ts
+// 文字列の長さを返す関数
+export function long(input) {
+    return input.length;
 }
-exports.long = long;
-function big(uppercase) {
-    return uppercase.toUpperCase();
+// 文字列を大文字に変換する関数
+export function big(input) {
+    return input.toUpperCase();
 }
-exports.big = big;
-function small(LowerCase) {
-    return LowerCase.toLowerCase();
+// 文字列を小文字に変換する関数
+export function small(input) {
+    return input.toLowerCase();
 }
-exports.small = small;
-function times(what, moji) {
-    const regex = new RegExp(moji, "");
-    const matches = what.match(regex);
+// 文字列内の特定の文字の出現回数を数える関数
+export function nagasa(input, target) {
+    // 正規表現を使用して、対象文字の出現回数を数える
+    const regex = new RegExp(target, "g");
+    const matches = input.match(regex);
     return matches ? matches.length : 0;
 }
-exports.times = times;

@@ -1,22 +1,21 @@
-//インポート文
-import { long } from "./stringUtils.js";
-import { big } from "./stringUtils.js";
-import { small } from "./stringUtils.js";
-import { times } from "./stringUtils.js";
-import * as readline from "readline"; //node_moduleの機能インポート
+// 関数をインポート
+import { long, big, small, nagasa } from "./stringUtils.js"; // 適切なファイルパスを指定
 
-const user = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+// プロンプトでユーザーからの入力を受け取る
+const userInput = prompt("文字列を入力してください:");
 
-user.question("文字列を入力: ", (input: string) => {
-  console.log(`文字列の長さ: ${long(input)}`);
-  console.log(`大文字: ${big(input)}`);
-  console.log(`小文字: ${small(input)}`);
+// 入力があれば関数を起動し、結果をコンソールに表示する
+if (userInput !== null) {
+  console.log("文字列の長さ:", long(userInput));
+  console.log("大文字:", big(userInput));
+  console.log("小文字:", small(userInput));
 
-  user.question("出現回数を数える文字: ", (char: string) => {
-    console.log(`出現 '${char}' 文字列中で: ${times(input, char)}`);
-    user.close(); //user呼び出し
-  });
-});
+  const target = prompt("出現回数を数えたい文字を入力してください:");
+  if (target !== null) {
+    console.log(`${target} の出現回数:`, nagasa(userInput, target));
+  } else {
+    console.log("出現回数を数えたい文字が入力されていません。");
+  }
+} else {
+  console.log("文字列が入力されていません。");
+}
