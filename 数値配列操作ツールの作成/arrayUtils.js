@@ -1,6 +1,6 @@
 // 配列の合計を計算する
 export function total(tasi) {
-    return tasi.reduce((acc, val) => acc + val, 0);
+    return tasi.reduce((zan, val) => zan + val, 0);
 }
 // 配列の平均を計算する
 export function average(hei) {
