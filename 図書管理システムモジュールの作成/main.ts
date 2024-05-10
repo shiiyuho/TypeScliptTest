@@ -1,4 +1,4 @@
-// main.tsにインポート
+// book.tsをインポート
 import { Book } from "./book.js";
 
 let book1 = new Book("1", "1", 0);

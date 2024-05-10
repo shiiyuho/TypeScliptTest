@@ -1,15 +1,16 @@
-// book.ts、エクスポート
+// bookクラスをエクスポート
 export class Book {
+    //bookクラスの作成
     title;
-    author;
+    author; //プロパティ
     stock;
     constructor(title, author, stock) {
         this.title = title;
-        this.author = author;
+        this.author = author; //コンストラクタで初期化
         this.stock = stock;
     }
     displayInfo() {
-        //ディスプレイインフォ
+        //ディスプレイインフォで出力
         console.log(`title: ${this.title}, author: ${this.author}, stock: ${this.stock}` //
         );
     }
