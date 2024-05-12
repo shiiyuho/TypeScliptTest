@@ -8,8 +8,8 @@ const a = add(10, 10); //値の代入
 console.log("計算をさせる値:10,10");
 console.log("add関数の出力結果:", a); //答えの出力
 //subtract(引き算)
-const b = subtract(10, 0); //値の代入
-console.log("計算をさせる値:10,0");
+const b = subtract(10, 5); //値の代入
+console.log("計算をさせる値:10,5");
 console.log("subtract関数の出力結果:", b);
 //multiply(掛け算)
 const c = multiply(10, 10); //値の代入
