@@ -1,4 +1,4 @@
-// stringUtils.ts
+// 関数を書き込んでいるファイル（長さ、大文字、小文字、出現回数の関数）
 
 // 文字列の長さを返す関数
 export function long(input: string): number {
