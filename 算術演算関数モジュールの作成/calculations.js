@@ -12,6 +12,6 @@ export function divide(x, y) {
         return x / y;
     }
     else {
-        console.log("error");
+        console.log("第二引数が「0」のため:error");
     }
 }
