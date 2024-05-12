@@ -8,7 +8,7 @@ import { Rsort } from "./arrayUtils.js";
 
 // サンプルの数値配列を定義する
 const sample: number[] = [2, 4, 6, 8, 10];
-
+console.log("今回「sample」に指定した数字は:", sample);
 // 合計値を計算する
 const sum1 = total(sample); //sampleを追加
 console.log("合計:", sum1);
