@@ -1,7 +1,7 @@
 export class user {
   //class userのエクスポート文
   ID: number = 0;
-  name: string = ""; //内容
+  name: string = "";
   mail: string = "";
 
   constructor(ID: number, name: string, mail: string) {

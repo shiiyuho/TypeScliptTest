@@ -2,7 +2,7 @@ export class user {
     constructor(ID, name, mail) {
         //class userのエクスポート文
         this.ID = 0;
-        this.name = ""; //内容
+        this.name = "";
         this.mail = "";
         //constructorでの初期化文
         this.ID = ID;
