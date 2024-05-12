@@ -1,25 +1,21 @@
-// bookクラスをエクスポート
 export class Book {
-  //bookクラスの作成
   title: string;
-  author: string; //プロパティ
+  author: string;
   stock: number;
 
   constructor(title: string, author: string, stock: number) {
     this.title = title;
-    this.author = author; //コンストラクタで初期化
+    this.author = author;
     this.stock = stock;
   }
 
   displayInfo(): void {
-    //ディスプレイインフォで出力
     console.log(
       `title: ${this.title}, author: ${this.author}, stock: ${this.stock}` //
     );
   }
 
   borrowBook(): void {
-    //ひとつずつ減らしていく「if文」
     if (this.stock > 0) {
       this.stock--;
       console.log(`貸出しました`);
