@@ -1,7 +1,7 @@
 export class product {
   //productクラスの設定
   Id: number = 0;
-  name: string = ""; //プロパティ
+  name: string = "";
   price: number = 0;
   stock: number = 0;
 
